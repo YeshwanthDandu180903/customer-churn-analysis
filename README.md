@@ -58,5 +58,5 @@ ETL Pipelines · Data Cleaning · Feature Engineering · Data Visualization · M
 ## 📬 Author
 **Yeshwanth Dandu**  
 B.Tech (CSE - Data Science), Institute of Aeronautical Engineering, Hyderabad  
-📧 [yeshwanthdandu180903@gmail.com](mailto:yeshwanthdandu180903@gmail.com)  
-🌐 [LinkedIn](https://linkedin.com/in/yeshwanth-dandu) | [GitHub](https://github.com/YeshwanthDandu180903)
+📧 [yeshwanthdandu2003@gmail.com](mailto:yeshwanthdandu2003@gmail.com)  
+🌐 [LinkedIn](https://www.linkedin.com/in/yeshwanthdandu) | [GitHub](https://github.com/YeshwanthDandu180903)
