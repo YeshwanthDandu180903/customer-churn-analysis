@@ -1,62 +1,85 @@
-# 📊 Customer Churn Prediction (SQL + Power BI + Python)
+# 📊 Customer Churn Prediction
 
-This project demonstrates a complete data analytics and machine learning pipeline — from **ETL in SQL Server** to **Power BI dashboards** and **churn prediction using Python**.  
-It aims to help businesses identify at-risk customers, understand churn drivers, and support marketing strategies.
+**SQL • Python (Machine Learning) • Power BI**
+
+This project implements an **end-to-end customer churn analytics pipeline**, combining **SQL for data transformation**, **Python for machine learning**, and **Power BI for visualization** to identify at-risk customers and support data-driven retention strategies.
 
 ---
-
 ## 🚀 Project Overview
-The project followed a four-stage process:
-1. **ETL and Database Preparation (SQL Server)**
-   - Imported raw data into a staging table (`stg_churn`) and applied data integrity checks.
-   - Cleaned, transformed, and stored processed data in a production table (`prod_churn`).
-   - Created analytical SQL views (`vw_churn_data`, `vw_join_data`) for downstream ML integration.
 
-2. **Dashboard Development (Power BI)**
-   - Connected Power BI to SQL Server and performed transformations in Power Query.
-   - Built reference tables (`mapping_age_grp`, `mapping_tenure_grp`) for categorized visual insights.
-   - Designed an interactive dashboard showing KPIs like **Total Customers**, **Churn Rate**, and **New Joiners**.
-   - Visualized churn by demographics, geography, contract type, payment mode, and service usage.
+### 🔹 SQL (Data Cleaning, Transformation & Business Metrics)
 
-3. **Machine Learning Model (Python)**
-   - Imported SQL view data into Python for modeling using **pandas** and **scikit-learn**.
-   - Encoded categorical data, split dataset (80/20), and trained a **Random Forest Classifier**.
-   - Achieved **~84% accuracy** and analyzed feature importance to identify churn predictors.
-   - (Model deployment in progress — will be integrated into Power BI dashboard and Flask app.)
+- Raw customer data was processed using **Microsoft SQL Server Management Studio (SSMS)**.
+- Performed comprehensive data preparation in SQL, including:
+  - Data cleaning and validation
+  - Data transformations based on business rules
+  - Creation of customer-level metrics and aggregations
+- Built clean, analytics-ready tables and SQL views for downstream usage.
+- Exported the finalized dataset from SQL and loaded it into **Google Colab** for:
+  - Exploratory Data Analysis (EDA)
+  - Machine Learning model development using Python
 
----
+### 🔹 Python (EDA & Machine Learning)
 
-## 🧠 Tech Stack
-**Languages & Tools:**  
-SQL Server | Power BI | Python | pandas | NumPy | scikit-learn | GitHub
+* Imported curated SQL data into Python
+* Conducted:
 
-**Key Skills Demonstrated:**  
-ETL Pipelines · Data Cleaning · Feature Engineering · Data Visualization · Machine Learning · Dashboard Design
+  * Exploratory Data Analysis (EDA)
+  * Feature engineering and encoding
+  * Train / validation / test splitting
+* Trained and evaluated multiple ML algorithms:
 
----
+  * Logistic Regression
+  * KNN
+  * Naive Bayes
+  * Decision Tree
+  * Random Forest
+  * AdaBoost
+* Compared models using **Accuracy, Precision, Recall, and F1-score**
+* **Random Forest** achieved the best performance and was selected as the final model
 
-## 📊 Dashboard Preview
-![Churn Dashboard](./reports/churn_dashboard.png)
-
----
-
-## 📈 Results
-- Identified key churn drivers like contract type, payment method, and service usage.  
-- Built predictive model for proactive churn management (84% accuracy).  
-- Created an interactive BI dashboard for decision-makers.
+  * **~94% accuracy**
+  * Outperformed Decision Tree and baseline models
+* Generated **churn predictions** and **churn probability scores**
 
 ---
 
-## 📅 Project Status
-✅ ETL Process Completed  
-✅ Power BI Dashboard Built  
-⚙️ Machine Learning Model (In Progress)  
-🚀 Deployment Pending
+### 🔹 Power BI (Visualization & Insights)
+
+* Loaded prediction outputs into Power BI
+* Built interactive dashboards to visualize:
+
+  * Predicted churners
+  * Churn probability distribution
+  * Churn by demographics, contract type, tenure, and geography
+* Enabled business users to analyze churn risk and prioritize retention actions
+
+
+
+## 📈 Output
+
+* Final dataset includes:
+
+  * Churn prediction (0/1)
+  * Churn probability score per customer
+* Outputs exported in **Power BI–ready format** for reporting and analysis
+
+---
+
+## 🧠 Key Technologies
+
+* **SQL Server** – Data cleaning, transformation, aggregation
+* **Python** – EDA, machine learning, model evaluation
+* **Power BI** – Interactive dashboards and business insights
 
 ---
 
 ## 📬 Author
-**Yeshwanth Dandu**  
-B.Tech (CSE - Data Science), Institute of Aeronautical Engineering, Hyderabad  
-📧 [yeshwanthdandu2003@gmail.com](mailto:yeshwanthdandu2003@gmail.com)  
-🌐 [LinkedIn](https://www.linkedin.com/in/yeshwanthdandu) | [GitHub](https://github.com/YeshwanthDandu180903)
+
+**Yeshwanth Dandu**
+B.Tech (CSE – Data Science)
+📧 [yeshwanthdandu2003@gmail.com](mailto:yeshwanthdandu2003@gmail.com)
+🔗 LinkedIn | GitHub
+
+---
+
