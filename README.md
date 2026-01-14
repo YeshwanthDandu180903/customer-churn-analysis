@@ -4,6 +4,9 @@
 
 This project implements an **end-to-end customer churn analytics pipeline**, combining **SQL for data transformation**, **Python for machine learning**, and **Power BI for visualization** to identify at-risk customers and support data-driven retention strategies.
 
+
+## Dataset:
+https://www.kaggle.com/datasets/muhammadshahidazeem/customer-churn-dataset
 ---
 ## 🚀 Project Overview
 
